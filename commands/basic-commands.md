@@ -1,103 +1,50 @@
 # Linux Basic Commands
 
-## 1. pwd
+A quick reference to common Linux commands for navigation, file management, and text searching.
 
-**Purpose:** Displays the current working directory.
+## 1. Navigation
 
-```bash
-pwd
-```
+| Command | Purpose |
+|---|---|
+| `pwd` | Displays the current working directory. |
+| `ls` | Lists files and directories. |
+| `ls -lah` | Shows detailed file information, including hidden files and human-readable sizes. |
+| `cd /etc` | Changes to the `/etc` directory. |
+| `cd ..` | Moves to the parent directory. |
+| `cd ~` | Moves to the current user's home directory. |
 
-## 2. ls
+## 2. File and Directory Management
 
-**Purpose:** Lists files and directories.
+| Command | Purpose |
+|---|---|
+| `mkdir practice` | Creates a directory named `practice`. |
+| `touch notes.txt` | Creates an empty file if it doesn't exist. |
+| `cat notes.txt` | Displays the contents of a file. |
+| `cp notes.txt notes-backup.txt` | Copies a file to a new file. |
+| `mv notes.txt important-notes.txt` | Renames or moves a file. |
+| `rm notes.txt` | Deletes a file. Use carefully. |
 
-```bash
-ls
-ls -lah
-```
+## 3. Searching Text
 
-`ls -lah` displays a detailed listing, including hidden entries, with human-readable file sizes.
+| Command | Purpose |
+|---|---|
+| `grep "ERROR" server.log` | Searches for the word `ERROR` in a file. |
+| `grep -i "error" server.log` | Searches without distinguishing uppercase and lowercase letters. |
 
-## 3. cd
+## 4. Reading Files
 
-**Purpose:** Changes the current directory.
+| Command | Purpose |
+|---|---|
+| `head server.log` | Displays the first 10 lines by default. |
+| `tail server.log` | Displays the last 10 lines by default. |
+| `less server.log` | Opens a file for scrolling and reading. Press `q` to quit. |
 
-```bash
-cd /etc
-cd ..
-cd ~
-```
+## Important Notes
 
-- `cd /etc` — opens the `/etc` directory.
-- `cd ..` — moves to the parent directory.
-- `cd ~` — moves to the current user's home directory.
-
-## 4. mkdir
-
-**Purpose:** Creates a directory.
-
-```bash
-mkdir practice
-```
-
-## 5. touch
-
-**Purpose:** Creates an empty file if it does not exist.
-
-```bash
-touch notes.txt
-```
-
-## 6. cat
-
-**Purpose:** Displays file contents.
-
-```bash
-cat notes.txt
-```
-
-## 7. cp
-
-**Purpose:** Copies a file.
-
-```bash
-cp notes.txt notes-backup.txt
-```
-
-## 8. mv
-
-**Purpose:** Moves or renames a file.
-
-```bash
-mv notes.txt important-notes.txt
-```
-
-## 9. grep
-
-**Purpose:** Searches text for a matching pattern.
-
-```bash
-grep "ERROR" server.log
-grep -i "error" server.log
-```
-
-The `-i` option makes the search case-insensitive.
-
-## 10. less
-
-**Purpose:** Opens a file for scrolling and reading.
-
-```bash
-less server.log
-```
-
-Press `q` to quit.
-
----
+- Linux commands are case-sensitive.
+- Be careful when using `rm`, because deleted files may not be recoverable.
+- Practice commands in a test directory before using them on important files.
 
 ## Learning Notes
-
-.## Learning Notes
 
 This repository documents my Linux learning journey through practical examples and command references.
