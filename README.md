@@ -1,36 +1,69 @@
 # Linux Fundamentals Lab
 
-## About This Project
+## Overview
 
-This repository documents my hands-on learning journey in Linux fundamentals, system administration, networking, and Linux security.
+This repository documents my practical learning of Linux fundamentals, command-line tools, filesystem management, users and permissions, processes, services, networking, and system troubleshooting.
 
-My goal is to strengthen my Linux skills through practical exercises, clear documentation, and beginner-friendly examples.
+The goal is to build a strong foundation in Linux administration and understand the operating-system concepts relevant to cybersecurity and AI security.
 
 ## Topics Covered
 
-- Linux commands and filesystem navigation
-- File and directory management
-- Users, groups, and permissions
-- Processes and system services
-- Package management and security updates
-- System logs and troubleshooting
-- Networking fundamentals
-- SSH and remote access
-- Linux security and hardening
+### 1. Basic Linux Commands
+- Filesystem navigation and file management
+- Searching, viewing, and manipulating files
+- Pipes and input/output redirection
 
-## Learning Approach
+### 2. Filesystem and Storage
+- Linux filesystem hierarchy
+- Disks, partitions, and filesystems
+- Storage usage and swap space
 
-For each topic, I aim to document:
+### 3. Users and Permissions
+- Linux users and groups
+- File ownership and permissions
+- `chmod`, `chown`, and `sudo`
+- Least-privilege principles
 
-- The purpose of the command or concept
-- A practical example
-- The expected output or result
-- Important security considerations where relevant
+### 4. Processes and Services
+- Process management
+- Background services and daemons
+- `systemctl` and service status
 
-## Project Status
+### 5. Networking and Remote Access
+- IP addresses and routing basics
+- DNS and network troubleshooting
+- SSH fundamentals
 
-This project is a work in progress. I will add notes, examples, and practical exercises as I continue learning.
+### 6. Package Management and Logs
+- APT package management
+- Software repositories and updates
+- `journalctl` and basic troubleshooting
 
-## Disclaimer
+## Repository Structure
 
-Commands and exercises are intended for learning and authorized lab environments. Always understand a command before running it, especially when it requires administrator privileges.
+```text
+linux-fundamentals-lab/
+├── README.md
+└── commands/
+    ├── basic-commands.md
+    ├── file-permissions.md
+    ├── users-and-groups.md
+    ├── processes-and-services.md
+    ├── networking.md
+    ├── filesystem-and-storage.md
+    └── package-management-and-logs.md
+```
+
+## Practical Learning
+
+Each topic contains notes, command references, examples, and explanations of important Linux concepts.
+
+The repository serves as a personal technical reference and records my progress through hands-on Linux learning.
+
+
+## Next Learning Goals
+
+- Document practical Linux security concepts in a separate repository.
+- Develop Python programming skills.
+- Build security-focused tools and practical projects.
+- Progress toward AI security and AI application testing.
